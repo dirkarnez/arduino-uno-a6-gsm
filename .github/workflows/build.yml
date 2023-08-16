@@ -11,7 +11,7 @@ jobs:
     name: Create Release
     runs-on: windows-latest
     env:
-      arduinoCliTargetZip: arduino-uno-a6-gsm-${{ github.ref_name }}-arduino-cli_0.33.1_Windows_64bit.zip
+      arduinoCliTargetZip: ${{ github.event.repository.name }}-${{ github.ref_name }}-arduino-cli_0.33.1_Windows_64bit.zip
     steps:
       - uses: actions/checkout@v3
       
